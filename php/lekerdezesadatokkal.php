@@ -6,16 +6,16 @@ require_once "database.php";
 
 
 // Megnézzük, hogy az adtot megkapta-e a php
-if (isset($_POST["teljesnev"]) && $_POST["eletkor"]) {
+if (isset($_POST["adat"])) {
     //true
     //adatok eltárolása
-    $teljesnev = $_POST["teljesnev"];
-    $eletkor = $_POST["eletkor"];
+    $adat = $_POST["adat"];
+
 
     // vagy használható $_GET["teljesnev"], ebben az esetben ezt a tipust kell megadni a js-ben.
 
     //lekérdezés adatokkal
-    $sql = "SELECT * FROM adatok WHERE teljesnev like '$teljesnev' and eltekor like $eletkor";
+    $sql = "SELECT * FROM adatok WHERE teljesnev like '%$adat%'";
 
 
     // statement létrehozása

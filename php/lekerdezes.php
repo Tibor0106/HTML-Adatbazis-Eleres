@@ -6,7 +6,7 @@ require_once "database.php";
 /* Ide kell a lekérdező SQL parancs (Beillesztés előtt érdemes teszteni a parancsot, 
 ha nem jó a parancs akkor a console-on 
 500-as hibát látsz)*/
-$sql = "SELECT * FROM tabla";
+$sql = "SELECT * FROM adatok";
 
 
 // statement létrehozása
