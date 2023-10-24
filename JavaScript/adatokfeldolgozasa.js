@@ -7,10 +7,10 @@ function lekerdezes() {
             $("#adatok").empty(); // adatmezők ürítése
             // hiba kezelés
             try {
-                // response lesz az a változó, ami a léekérdezett adatokat tárolja (JSON formátum (Használható foreach stb))
+                // data lesz az a változó, ami a lekérdezett adatokat tárolja (JSON formátum (Használható foreach stb))
                 // az adatokhoz feldolgozásához használható példák
 
-                /*Adat hozzáadása az oldalhoz, ez eltérhet, ezt neked kell kiválasztani hogy hogyan jeleníted ,eg az adatot document.body.innerHTML += i;*/ /* itt általában használni
+                /*Adat hozzáadása az oldalhoz, ez eltérhet, ezt neked kell kiválasztani, hogy hogyan jeleníted meg az adatot document.body.innerHTML += i;*/ /* itt általában használni
                   kell így pl: i.teljesnev, az adatbázisban található névvel legyen azonos*/
 
                 //példa
@@ -41,10 +41,10 @@ function lekerdezes2(adat) {
         success: function (data) {
             $("#adatok").empty();
 
-            // response lesz az a változó, ami a léekérdezett adatokat tárolja (JSON formátum (Használható foreach stb))
+            // data lesz az a változó, ami a lekérdezett adatokat tárolja (JSON formátum (Használható foreach stb))
             // az adatokhoz feldolgozásához használható példák
 
-            /*Adat hozzáadása az oldalhoz, ez eltérhet, ezt neked kell kiválasztani, hogy, hogyan jeleníted meg az adatot */
+            /*Adat hozzáadása az oldalhoz, ez eltérhet, ezt neked kell kiválasztani, hogy hogyan jeleníted meg az adatot */
             /* itt általában használni
              kell így pl: i.teljesnev, az adatbázisban található névvel legyen azonos*/
             if (data.length === 0) {

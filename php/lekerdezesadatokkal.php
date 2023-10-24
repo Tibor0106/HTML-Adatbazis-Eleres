@@ -37,7 +37,7 @@ if (isset($_POST["adat"])) {
             $data[] = $row;
         }
     }
-    // adatok kiírása JSON formátumban. (Majd ezt dolgozzuk fel a javasctript-el)
+    // adatok kiírása JSON formátumban. (Majd ezt dolgozzuk fel a javascript-el)
 
     header('Content-Type: application/json; charset=utf-8');
     echo json_encode($data);
